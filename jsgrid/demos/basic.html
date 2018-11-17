@@ -1,9 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>广东2018美术本科录取情况</title>
+    <title>jsGrid - Basic Scenario</title>
     <link rel="stylesheet" type="text/css" href="demos.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
 
@@ -25,7 +24,7 @@
     <script src="../src/fields/jsgrid.field.control.js"></script>
 </head>
 <body>
-    <h1>广东2018美术本科录取情况</h1>
+    <h1>Basic Scenario</h1>
     <div id="jsGrid"></div>
 
     <script>
@@ -45,14 +44,12 @@
                 deleteConfirm: "Do you really want to delete the client?",
                 controller: db,
                 fields: [
-                    { name: "院校代码", type: "text", width: 150 },
-                    { name: "院校名称", type: "text", width: 150 },
-                    { name: "计划数", type: "text", width: 20 },
-                    { name: "投档人数", type: "text",width: 20  },
-                    { name: "投档分", type: "text", ,width: 20 },
-                    { name: "投档分", type: "text", ,width: 20 },
-                    { name: "最低排位", type: "text", ,width: 20 }
-                    
+                    { name: "Name", type: "text", width: 150 },
+                    { name: "Age", type: "number", width: 50 },
+                    { name: "Address", type: "text", width: 200 },
+                    { name: "Country", type: "select", items: db.countries, valueField: "Id", textField: "Name" },
+                    { name: "Married", type: "checkbox", title: "Is Married", sorting: false },
+                    { type: "control" }
                 ]
             });
 
