@@ -4,8 +4,11 @@
 
         loadData: function(filter) {
             return $.grep(this.clients, function(client) {
-                //return (!filter.school_name || client.school_name.indexOf(filter.Name) > -1);
-                return(true);
+                return (!filter.Name || client.Name.indexOf(filter.Name) > -1)
+                    && (filter.Age === undefined || client.Age === filter.Age)
+                    && (!filter.Address || client.Address.indexOf(filter.Address) > -1)
+                    && (!filter.Country || client.Country === filter.Country)
+                    && (filter.Married === undefined || client.Married === filter.Married);
             });
         },
 
