@@ -14,8 +14,8 @@
 
 
         loadData: function(filter) {
-            return $.grep(this.meishu, function(meishu) {
-                return (!filter.Name || meishu.院校代码.indexOf(filter.Name) > -1);
+            return $.grep(this.meishu, function(client) {
+                return (!filter.Name || client.院校代码.indexOf(filter.Name) > -1);
             });
         },
 
