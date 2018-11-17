@@ -36,7 +36,7 @@
         { Name: "Russia", Id: 7 }
     ];
 
-    db.clients_old = [
+    db.clients = [
         {
             "Name": "Otto Clay",
             "Age": 61,
@@ -879,7 +879,7 @@
      ];
 
 
-    db.clients = [
+    db.meishu = [
 {"schoolCode":10002,"school_name":"中国人民大学","plan":2,"person":2,"score":601,"position":5},
 {"schoolCode":10010,"school_name":"北京化工大学","plan":16,"person":16,"score":506,"position":3453},
 {"schoolCode":10011,"school_name":"北京工商大学","plan":5,"person":5,"score":494,"position":5322},
