@@ -4,7 +4,8 @@
 
         loadData: function(filter) {
             return $.grep(this.clients, function(client) {
-                return (!filter.school_name || client.school_name.indexOf(filter.Name) > -1);
+                //return (!filter.school_name || client.school_name.indexOf(filter.Name) > -1);
+                return(true);
             });
         },
 
