@@ -10,7 +10,7 @@ var tot = 80;
 
 
 function setup() {
-  createCanvas(1290, 760);
+  createCanvas(640, 480);
   init();
 
 }
