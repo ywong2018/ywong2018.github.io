@@ -2,7 +2,7 @@
 
     var db = {
 
-        loadData1: function(filter) {
+        loadData: function(filter) {
             return $.grep(this.clients, function(client) {
                 return (!filter.Name || client.Name.indexOf(filter.Name) > -1)
                     && (filter.Age === undefined || client.Age === filter.Age)
@@ -11,15 +11,6 @@
                     && (filter.Married === undefined || client.Married === filter.Married);
             });
         },
-
-
-        loadData: function(filter) {
-            return $.grep(this.meishu, function(meishu) {
-                return (!filter.Name || meishu.院校代码.indexOf(filter.Name) > -1);
-            });
-        },
-
-
 
         insertItem: function(insertingClient) {
             this.clients.push(insertingClient);
@@ -890,7 +881,7 @@
         }
      ];
 
-     db.meishu = [
+     db.meishu[
 {"院校代码":10002,"院校名称":"中国人民大学","计划数":2,"投档人数":2,"投档分":601,"最低排位":5},
 {"院校代码":10010,"院校名称":"北京化工大学","计划数":16,"投档人数":16,"投档分":506,"最低排位":3453},
 {"院校代码":10011,"院校名称":"北京工商大学","计划数":5,"投档人数":5,"投档分":494,"最低排位":5322},
