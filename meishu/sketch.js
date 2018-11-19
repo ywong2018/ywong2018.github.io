@@ -6,6 +6,6 @@ function setup() {
   //canvastest.parent('sketch-holder');
 
   background(255, 0, 200);
-  transalte(width/2, height/2);
-  ellipse(0,0,50,50);
+  translate(width / 2, height / 2);
+  rect(0, 0, 20, 20);
 }
