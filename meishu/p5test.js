@@ -19,7 +19,7 @@ function setup() {
 function draw() {
   
   //Do not clear the screen;
-  background(255,50);
+  // background(255,50);
   
   for (var i = 0 ; i < elements.length; i++){
     var el = elements[i];
@@ -46,7 +46,7 @@ function mousePressed(){
 }
 
 function init(){
-  background(255);
+  background(255,50);
   // Distribute the Elements randomly on a line ;
   elements = [];
 
