@@ -49,6 +49,8 @@ function mousePressed(){
 
 function init(){
   // background(255);
+  noCanvas();
+  canvas= createCanvas(1024, 768);
   background(255,50);
   // Distribute the Elements randomly on a line ;
   elements = [];
