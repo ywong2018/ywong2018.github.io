@@ -10,8 +10,8 @@ var tot = 80;
 
 
 function setup() {
-  var myCanvas= createCanvas(640, 480);
-  myCanvas.parent("canvas");
+  var canvas= createCanvas(640, 480);
+  // canvas.parent("canvas");
   init();
 
 }
