@@ -19,7 +19,7 @@ function setup() {
 function draw() {
   
   //Do not clear the screen;
- // background(255);
+  background(255,50);
   
   for (var i = 0 ; i < elements.length; i++){
     var el = elements[i];
