@@ -48,7 +48,7 @@ function mousePressed(){
 }
 
 function init(){
-  background(255);
+  // background(255);
   background(255,50);
   // Distribute the Elements randomly on a line ;
   elements = [];
