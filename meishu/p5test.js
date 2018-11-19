@@ -125,7 +125,7 @@ function Element(x, y, rad, col){
   //Use this for debugging purpouses;
 
   this.show = function(){
-    stroke(0,  255);
+    stroke(0,  50);
     ellipse(this.pos.x, this.pos.y, this.r * 2, this.r * 2);
     line(this.pos.x + this.dir.x * this.r, this.pos.y + this.dir.y * this.r, this.pos.x, this.pos.y);
   }
