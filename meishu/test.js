@@ -6,7 +6,7 @@
             return $.grep(this.meishu, function(client) {
                 // return (!filter.Name || client.Name.indexOf(filter.Name) > -1)
                 return  (!filter.院校名称 || client.院校名称.indexOf(filter.院校名称) > -1)
-                    && (filter.院校代码 === undefined || client.院校代码 === filter.Age)
+                    && (filter.院校代码 === undefined || client.院校代码 === filter.院校代码)
                     && (filter.Age === undefined || client.Age === filter.Age)
                     && (!filter.Address || client.Address.indexOf(filter.Address) > -1)
                     && (!filter.Country || client.Country === filter.Country)
