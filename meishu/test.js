@@ -8,11 +8,27 @@
                 return  (!filter.院校名称 || client.院校名称.indexOf(filter.院校名称) > -1)
                     && (filter.院校代码 === undefined || client.院校代码 === filter.院校代码)
                     && (filter.计划数 === undefined || client.计划数 <= filter.计划数)
-                    && (!filter.投档人数 || client.Address.indexOf(filter.Address) > -1)
-                    && (!filter.Country || client.Country === filter.Country)
-                    && (filter.Married === undefined || client.Married === filter.Married);
+                    && (!filter.投档人数 || client.投档人数 <= filter.投档人数)
+                    && (!filter.投档分 || client.投档分 <= filter.投档分)
+                    && (filter.最低排位 === undefined || client.最低排位 <= filter.最低排位);
             });
         },
+
+
+        // loadData: function(filter) {
+        //     return $.grep(this.meishu, function(client) {
+        //         // return (!filter.Name || client.Name.indexOf(filter.Name) > -1)
+        //         return  (!filter.院校名称 || client.院校名称.indexOf(filter.院校名称) > -1)
+        //             && (filter.院校代码 === undefined || client.院校代码 === filter.院校代码)
+        //             && (filter.计划数 === undefined || client.计划数 <= filter.计划数)
+        //             && (!filter.投档人数 || client.Address.indexOf(filter.Address) > -1)
+        //             && (!filter.Country || client.Country === filter.Country)
+        //             && (filter.Married === undefined || client.Married === filter.Married);
+        //     });
+        // },
+
+
+
 
         insertItem: function(insertingClient) {
             this.clients.push(insertingClient);
