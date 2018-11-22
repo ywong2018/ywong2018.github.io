@@ -48,11 +48,41 @@
      <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script> -->
     <!-- <script src="sketch.js"></script> -->
    <!-- <script src="p5test.js"></script> -->
+<script type="text/javascript">
+function SumNum()
+{
+var sumValue
+a=eval(shuke.value);
+b=eval(wenhua.value);
+if (isNaN(a))
+{a=0}
+if (isNaN(b))
+{b=0}
+sumValue = a*2.5*0.6+b*0.4;
+self['zonghefen'].value =sumValue;
+}
+</script>
 
 
 </head>
 <body>
     <h1>2018广东美术本科录取情况</h1>
+    <h5>广东联考综合分计算器</h5>
+    美术成绩
+<input id="shuke" type="text" size="10" onkeyup="value=value.replace(/[^\d\.]/g,'');SumNum();">
+文化成绩
+<input id="wenhua" type="text" size="10" onkeyup="value=value.replace(/[^\d\.]/g,'');SumNum();">
+综合分
+<input id="zonghefen" type="text" size="10" >
+<h5>广美联考综合分计算器</h5>
+    美术成绩
+<input id="shuke" type="text" size="10" onkeyup="value=value.replace(/[^\d\.]/g,'');SumNum();">
+文化成绩
+<input id="wenhua" type="text" size="10" onkeyup="value=value.replace(/[^\d\.]/g,'');SumNum();">
+综合分
+<input id="zonghefen" type="text" size="10" >
+
+
     <div id="sketch-holder">
       <!-- Our sketch will go here! -->
     </div>
@@ -67,7 +97,7 @@
 
             $("#jsGrid").jsGrid({
                 height: "80%",
-                width: "100%",
+                width: "1000%",
                 filtering: true,
                 // editing: true,
                 // inserting: true,
