@@ -66,18 +66,20 @@ self['zonghefen'].value =sumValue;
    var lastPosfen= 400;
 
    var intSumValue = int(sumValue);
+   var thepos;
+   alert(intSumValue);
    if(intSumValue<lastPosfen){
-        self['paiwei'].value =""+ paiwei[paiwei.length-1] + "以下";
+       thepos = =""+ paiwei[paiwei.length-1] + "以下";
    }else{
      
-        self['paiwei'].value =""+ paiwei[paiwei.length-intSumValue+lastPosfen];
+        thepos =""+ paiwei[paiwei.length-intSumValue+lastPosfen-1];
    }
+   alert(thepos);
+   self['paiwei'].value =thepos;   
 
 }
 
-
 </script>
-
 
 </head>
 <body>
