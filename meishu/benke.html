@@ -17,6 +17,7 @@
     </style> -->
 
 
+    <link rel="stylesheet" type="text/css" href="loader.css" />
     <link rel="stylesheet" type="text/css" href="demos.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
 
@@ -82,18 +83,42 @@ self['zonghefen'].value =sumValue;
 
 </script>
 
+
+<script>
+    function doHide(){
+        document.getElementById( "imgToHide" ).style.display = "none" ;
+    }
+
+    function hideImage(){
+        //  5000 = 5 seconds
+        setTimeout( "doHide()", 5000 ) ;
+    }
+</script>
+
+
+
 </head>
-<body>
-    <h1>2018广东美术本科录取情况</h1>
-    <h3>可以查询，或点表格标题排序, 附带下面广东联考综合分计算器</h3>
-    <font size="3" color="red">美术成绩</font>
-<input id="shuke" type="text" size="8" onkeyup="value=value.replace(/[^\d\.]/g,'');SumNum();">
-<font size="3" color="red">文化成绩</font>
-<input id="wenhua" type="text" size="8" onkeyup="value=value.replace(/[^\d\.]/g,'');SumNum();">
-<font size="3" color="red">=综合分</font>
-<input id="zonghefen" type="text" size="8" >
-<font size="3" color="red">总排位</font>
-<input id="paiwei" type="text" size="8" >
+<body onload="javascript:hideImage()">
+<!-- <img id="imgToHide" src="gaokaoeasy.png"/>
+</br>
+ -->
+<div class="loaderImage" id="imgToHide">
+    <!-- <img id="imgToHide" src="gaokaoeasy.png"/> -->
+</br>
+
+
+</div>
+
+    <font size="2" color="blue"><b>2018广东美术本科录取情况&nbsp;</b></font><span style="font-family:arial;font-size:10px" color="red">&copy;广东高考在线美术生群, 18家长~菁</span></br>
+    <font size="2" color="blue">功能: 1.查询学校  2. 点表格标题进行排序 3.联考综合分计算器，获得2018年的排名</b></font></br>
+    <font size="2" color="red">美术成绩</font>
+<input id="shuke" type="text" size="4" onkeyup="value=value.replace(/[^\d\.]/g,'');SumNum();">
+<font size="2" color="red">文化成绩</font>
+<input id="wenhua" type="text" size="4" onkeyup="value=value.replace(/[^\d\.]/g,'');SumNum();">
+<font size="2" color="red">=综合分</font>
+<input id="zonghefen" type="text" size="4" >
+<font size="2" color="red">总排位</font>
+<input id="paiwei" type="text" size="4" >
 
 <!-- <h5>广美联考综合分计算器</h5>
     美术成绩

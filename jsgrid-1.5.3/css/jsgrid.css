@@ -36,6 +36,7 @@
     table-layout: fixed;
     border-collapse: collapse;
     border-spacing: 0;
+    font-size: 0.75em;
 }
 
 .jsgrid-cell {
@@ -94,7 +95,7 @@
 }
 
 .jsgrid-nodata-row .jsgrid-cell {
-    padding: .5em 0;
+    padding: .25em 0;
     text-align: center;
 }
 
