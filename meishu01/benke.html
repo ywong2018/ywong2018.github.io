@@ -119,8 +119,6 @@ self['zonghefen'].value =sumValue;
 <input id="zonghefen" type="text" size="4" >
 <font size="2" color="red">总排位</font>
 <input id="paiwei" type="text" size="4" >
-<a href="http://www.eeagd.edu.cn/portal/messages/1531593668739.html"><font size="1" color="red">下面资料原始资料来自广东考试院: http://www.eeagd.edu.cn/portal/messages/1531593668739.html</font></a>
-
 
 <!-- <h5>广美联考综合分计算器</h5>
     美术成绩
@@ -157,17 +155,14 @@ self['zonghefen'].value =sumValue;
                 deleteConfirm: "Do you really want to delete the client?",
                 controller: db,
                 fields: [
-                    // 院校代码    院校名称    计划数 投档人数    投档分 最低排位 广东 19对应分
+                    // 院校代码    院校名称    计划数 投档人数    投档分 最低排位
 
-                    //{ name: "院校代码", type: "number", width: 25 },
+                    { name: "院校代码", type: "number", width: 25 },
                     { name: "院校名称", type: "text", width: 50 },
                     { name: "计划数", type: "number", width: 15 },
                     { name: "投档人数", type: "number", width: 15 },
                     { name: "投档分", type: "number", width: 15 },
                     { name: "最低排位", type: "number", width: 20},
-                    { name: "广东", type: "text", width: 15},
-                    { name: "19对应分", type: "number", width: 15},
-
                     { type: "control" }
                 ]
             });
