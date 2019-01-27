@@ -1,0 +1,178 @@
+﻿<!-- <!DOCTYPE html> -->
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2018-2019广东美术本科</title>
+
+    <!-- <style>
+        canvas {
+           position:absolute;
+           top:60;
+           left:0;
+           width:100%;
+           height:100%;
+           z-index:100;
+        }
+    </style> -->
+
+
+    <link rel="stylesheet" type="text/css" href="loader.css" />
+    <link rel="stylesheet" type="text/css" href="demos.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="../jsgrid-1.5.3/css/theme.css" />
+
+    <script src="../jsgrid-1.5.3/external/jquery/jquery-1.8.3.js"></script>
+    <script src="test.js"></script>
+
+    <script src="../jsgrid-1.5.3/src/jsgrid.core.js"></script>
+    <script src="../jsgrid-1.5.3/src/jsgrid.load-indicator.js"></script>
+    <script src="../jsgrid-1.5.3/src/jsgrid.load-strategies.js"></script>
+    <script src="../jsgrid-1.5.3/src/jsgrid.sort-strategies.js"></script>
+    <script src="../jsgrid-1.5.3/src/jsgrid.field.js"></script>
+    <script src="../jsgrid-1.5.3/src/fields/jsgrid.field.text.js"></script>
+    <script src="../jsgrid-1.5.3/src/fields/jsgrid.field.number.js"></script>
+    <script src="../jsgrid-1.5.3/src/fields/jsgrid.field.select.js"></script>
+    <script src="../jsgrid-1.5.3/src/fields/jsgrid.field.checkbox.js"></script>
+    <script src="../jsgrid-1.5.3/src/fields/jsgrid.field.control.js"></script>
+    <!-- <script src="../functions.js"></script> -->
+
+<!--     <script src="../p5.min.js"></script>
+    <script src="../addons/p5.dom.min.js"></script>
+    <script src="../addons/p5.sound.min.js"></script>
+ -->    
+ <!-- <script src="p5test.js"></script> -->
+     <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script> -->
+    <!-- <script src="sketch.js"></script> -->
+   <!-- <script src="p5test.js"></script> -->
+<script type="text/javascript">
+function SumNum()
+{
+var sumValue
+a=eval(shuke.value);
+b=eval(wenhua.value);
+if (isNaN(a))
+{a=0}
+if (isNaN(b))
+{b=0}
+sumValue = a*2.5*0.6+b*0.4;
+self['zonghefen'].value =sumValue;
+
+   var paiwei=[1,1,3,3,3,3,4,4,4,4,4,4,7,8,8,10,10,10,11,12,13,14,14,15,16,20,22,25,28,28,29,34,37,41,46,49,54,60,66,72,77,80,93,104,118,128,136,143,155,165,177,186,202,216,238,255,275,292,307,328,348,368,382,399,422,445,470,492,522,552,591,621,665,698,748,786,830,874,927,991,1032,1091,1148,1208,1267,1329,1402,1466,1533,1614,1677,1765,1859,1945,2030,2124,2215,2326,2423,2520,2637,2774,2894,3014,3146,3274,3387,3522,3657,3804,3946,4093,4257,4431,4576,4744,4883,5051,5223,5411,5598,5805,5993,6220,6433,6666,6883,7102,7310,7521,7738,7972,8198,8435,8649,8886,9149,9408,9676,9945,10212,10475,10740,11012,11293,11563,11840,12123,12383,12665,12960,13234,13533,13812,14134,14457,14746,15039,15338,15661,15943,16257,16564,16864,17166,17461,17776,18062,18395,18711,19050,19357,19671,19962,20262,20554,20891,21197,21487,21821,22129,22453,22777,23065,23367,23621,23949,24259,24555,24831,25128,25421,25679,25968,26248,26538,26814,27083,27331,27582,27860,28139,28402,28675,28949,29182,29416,29632,29866,30085,30312,30530,30737,30953];
+
+
+    var firstPosfen = 613;
+    var lastPosfen = 400;
+
+    var intSumValue = parseInt(sumValue);
+    var thepos ="";
+
+    // alert(intSumValue);
+    if(intSumValue<lastPosfen){
+        thepos =""+ paiwei[paiwei.length-1] + "以下";
+    }else{
+
+        thepos =""+ paiwei[paiwei.length-parseInt(intSumValue)+parseInt(lastPosfen)-1]
+    }
+
+    self['paiwei'].value =thepos; 
+
+}
+
+</script>
+
+
+<script>
+    function doHide(){
+        document.getElementById( "imgToHide" ).style.display = "none" ;
+    }
+
+    function hideImage(){
+        //  5000 = 5 seconds
+        setTimeout( "doHide()", 5000 ) ;
+    }
+</script>
+
+
+
+</head>
+<body onload="javascript:hideImage()">
+<!-- <img id="imgToHide" src="gaokaoeasy.png"/>
+</br>
+ -->
+<div class="loaderImage" id="imgToHide">
+    <!-- <img id="imgToHide" src="gaokaoeasy.png"/> -->
+</br>
+
+
+</div>
+
+    <font size="2" color="blue"><b>2018广东美术本科录取情况&nbsp;</b></font><span style="font-family:arial;font-size:10px" color="red">&copy;广东高考在线美术生群, 18家长~菁</span></br>
+    <font size="2" color="blue">功能: 1.查询学校  2. 点表格标题进行排序 3.联考综合分计算器，获得2018年的排名</b></font></br>
+    <font size="2" color="red">美术成绩</font>
+<input id="shuke" type="text" size="4" onkeyup="value=value.replace(/[^\d\.]/g,'');SumNum();">
+<font size="2" color="red">文化成绩</font>
+<input id="wenhua" type="text" size="4" onkeyup="value=value.replace(/[^\d\.]/g,'');SumNum();">
+<font size="2" color="red">=综合分</font>
+<input id="zonghefen" type="text" size="4" >
+<font size="2" color="red">总排位</font>
+<input id="paiwei" type="text" size="4" >
+<a href="http://www.eeagd.edu.cn/portal/messages/1531593668739.html"><font size="1" color="red">下面资料原始资料来自广东考试院: http://www.eeagd.edu.cn/portal/messages/1531593668739.html</font></a>
+
+
+<!-- <h5>广美联考综合分计算器</h5>
+    美术成绩
+<input id="shuke1" type="text" size="10" onkeyup="value=value.replace(/[^\d\.]/g,'');SumNum();">
+文化成绩
+<input id="wenhua1" type="text" size="10" onkeyup="value=value.replace(/[^\d\.]/g,'');SumNum();">
+综合分
+<input id="zonghefen1" type="text" size="10" >
+ -->
+
+    <div id="sketch-holder">
+      <!-- Our sketch will go here! -->
+    </div>
+    <!-- <h3>原始资料来自广东省教育考试院的公告</h3> -->
+    <!-- <div id="canvas"> -->
+    <!-- <canvas data-processing-sources="p5test.js"></canvas> -->
+    <!-- </div> -->
+
+    <div id="jsGrid"></div>
+    <script>
+        $(function() {
+
+            $("#jsGrid").jsGrid({
+                height: "80%",
+                width: "100%",
+                filtering: true,
+                // editing: true,
+                // inserting: true,
+                sorting: true,
+                // paging: true,
+                autoload: true,
+                pageSize: 50,
+                pageButtonCount: 5,
+                deleteConfirm: "Do you really want to delete the client?",
+                controller: db,
+                fields: [
+                    // 院校代码    院校名称    计划数 投档人数    投档分 最低排位 广东 19对应分
+
+                    //{ name: "院校代码", type: "number", width: 25 },
+                    { name: "院校名称", type: "text", width: 50 },
+                    { name: "计划数", type: "number", width: 15 },
+                    { name: "投档人数", type: "number", width: 15 },
+                    { name: "投档分", type: "number", width: 15 },
+                    { name: "最低排位", type: "number", width: 20},
+                    { name: "广东", type: "text", width: 25},
+                    { name: "19对应分", type: "number", width: 15},
+
+                    { type: "control" }
+                ]
+            });
+
+        });
+    </script>
+
+</body>
+</html>
